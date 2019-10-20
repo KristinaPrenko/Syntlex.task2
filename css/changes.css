@@ -7216,7 +7216,7 @@
     margin-bottom: 50px;
   }
   .awards .news_container {
-    margin-bottom: 145px;
+    margin-bottom: 115px;
   }
   .awards .title {
     width: 65.2%;
@@ -7243,7 +7243,15 @@
       margin-bottom: 0px;
   }
   .awards_info_section {
-      margin-bottom: 43px;
+      margin-bottom: 60px;
+  }
+
+  .awards_info_section .item1 .text_block p {
+    margin-bottom: 50px;
+    line-height: 19px;
+  }
+  .awards_info_section .item2 .left p {
+      line-height: 19px;
   }
   .awards_info_section .item1 .left {
       width: 521px;
@@ -7261,6 +7269,13 @@
   .awards_info_section .item2 .left .text_block {
       padding-left: 75px;
   }
+  .awards_info_section .item1 .right .text_block {
+    width: 81%;
+  }
+
+  .awards_container .item .content, .news_container .item .content {
+    letter-spacing: -0.8px;
+}
   .rewievs_container {
       padding-left: 75px;
   }
@@ -7270,6 +7285,7 @@
   .rewievs_desc {
     width: 527px;
     margin-left: 31px;
+    margin-top: 15px;
   }
   .rewievs_text {
     padding-left: 10px;
@@ -7485,10 +7501,22 @@
 
  @media only screen and (max-width:1004px) {
   .second_header_biography .right {
-      padding-right: 110px;
+      padding-right: 105px;
       padding-top: 205px;
       padding-bottom: 40px;
       width: 37%;
+      letter-spacing: 0.2px;
+  }
+  .awards_info_section .item1 .text_block h3 {
+    width: 80%;
+    margin-top: 4px;
+  }
+  .second_header_biography .biography_info p {
+    margin-bottom: 10px;
+  }
+
+  .awards_container .item .content, .news_container .item .content {
+    letter-spacing: -0.8px;
   }
   .second_header .second_header_title {
       width: 100%;
@@ -7497,7 +7525,7 @@
       margin-bottom: 80px;
   }
   .awards_info_section .item1 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
   }
   .awards_info_section .item1 .left {
       width: 514px;
@@ -7517,6 +7545,7 @@
   }
   .awards_info_section .item2 .left {
       margin-right: 0;
+      padding-right: 60px;
   }
   .awards_info_section .item2 .left .text_block {
       padding-left: 25px;
@@ -7528,15 +7557,20 @@
     object-position: center;
   }
   .awards_info_section {
-    margin-bottom: 46px;
+    margin-bottom: 67px;
+  }
+  .rewievs .title {
+    width: 65%;
   }
   .rewievs_desc {
       width: 500px;
       margin-left: 41px;
   }
   .rewievs_name {
-    margin-bottom: 4px;
-    margin-top: 9px;
+    margin-top: 4px;
+  }
+  .rewievs .left, .rewievs .right { 
+      top: 105px;
   }
   .rewievs_text {
     padding-left: 0px;
@@ -7848,6 +7882,7 @@
      display: flex;
      -ms-flex-direction: column;
      flex-direction: column
+
    }
    .portfolio .filter_container input[type=checkbox]:checked+label, .portfolio .filter_container input[type=checkbox]:not(:checked)+label {
      margin-left: 0;
@@ -8046,9 +8081,10 @@
     .awards .title {
       margin-bottom: 45px;
       margin-top: 50px;
+      width: 64%;
     }
     .awards .item h4 {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
     .awards .owl-carousel {
       padding: 0px 60px;
@@ -8082,33 +8118,38 @@
     width: 100%;
     height: 512px;
   }
+  .awards_info_section .item1 .right .text_block {
+    width: 100%;
+  }
   .awards_info_section .item1 .right {
     width: auto;
     max-width: 58%;
     padding-left: 0;
     align-self: flex-end;
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: 37px;
 }
   
   .awards_info_section .item2 .left {
     order: 1;
     width: auto;
-    max-width: 61%;
-    padding-left: 0;
+    max-width: 66%;
     align-self: flex-end;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin-top: 50px;
     letter-spacing: -0.2px;
+    padding-right: 40px;
+  }
+  .awards_info_section .item2 .left .text_block {
+      width: 100%;
   }
   .awards_info_section .item2 .left p {
-    line-height: 20px;
+    line-height: 19px;
   }
   .awards_info_section {
-    margin-bottom: 75px;
+    margin-bottom: 82px;
   }
   .rewievs .title {
-      width: 65%;
+      width: 64%;
   }
   .rewievs_container {
     padding: 0 75px;
@@ -8128,6 +8169,7 @@
   .rewievs_desc {
     width: 295px;
     margin-left: 38px;
+    margin-top: 10px;
   }
 .rewievs_text {
     margin-bottom: 20px;
@@ -8433,6 +8475,9 @@ footer .menu_section {
 .second_header_biography .biography_info {
   width: 100%;
 }
+.second_header .second_header_title h3 {
+  line-height: 40px;
+}
    .awards .title, .main_portfolio .item:nth-child(2n) .info_block .title {
      padding-left: 0
    }
@@ -8521,29 +8566,64 @@ footer .menu_section {
      background: #F26C4D
    }
    .awards .title {
-     top: 100px;
-     text-align: left;
      width: auto;
-     padding-right: 0;
-     left: 40px;
-     text-transform: uppercase;
      display: inline-block;
-     font-size: 28px
+     font-size: 28px;
+     line-height: 38px;
+     margin-top: 60px;
    }
    .awards_info_section .item1 .left, .awards_info_section .item1 .right, .awards_info_section .item2 .left, .awards_info_section .item2 .right {
      width: 100%;
-     max-width: 100%
+     max-width: 100%;
+     padding: 0 40px;
+     height: auto;
+     margin-bottom: 0;
    }
+   .awards_info_section .item2 .left .text_block {
+    padding-left: 0;
+    margin-top: 18px;
+   }
+
+    .rewievs {
+       background: #121618
+
+    }
+    .awards_info_section {
+      margin-bottom: 0;
+    }
+   .rewievs .title {
+       width: fit-content;
+       font-size: 28px;
+       color: #FFFFFF;
+       margin-top: 49px;
+       line-height: 39px;
+       text-align: left;
+   }
+   .rewievs .left, .rewievs .right {
+    display: none;
+   }
+   .rewievs_container {
+    padding: 0;
+    }
+    .rewievs_inner {
+      flex-direction: column;
+      color: #FFFFFF;
+    }
+    .rewievs_desc {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    }
    .awards .news_container, .awards_info_section {
      padding: 0
    }
    .awards_info_section .item1 .right, .awards_info_section .item2 .left {
-     padding: 0 40px
+     padding: 0 40px;
+     margin-top: 0;
+     margin-right: 0;
    }
    .awards_info_section .item1 {
-     -ms-flex-direction: column;
-     flex-direction: column;
-     margin-bottom: 20px
+     margin-bottom: 0;
    }
    .awards_info_section .item1 .left {
      margin-bottom: 20px
@@ -8552,12 +8632,26 @@ footer .menu_section {
      -ms-flex-direction: column;
      flex-direction: column
    }
-   .awards_info_section .item2 .right {
-     margin-bottom: 30px;
-     -webkit-box-ordinal-group: 0;
-     -ms-flex-order: -1;
-     order: -1
-   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    .news_container {
      padding: 0;
      text-align: center;
@@ -8565,7 +8659,7 @@ footer .menu_section {
      margin-top: 14px;
    }
    .news_container .item {
-     max-width: auto;
+     max-width: 100%;
    }
    .news_container .item .content, .news_container .item .date {
      text-align: left
@@ -8745,6 +8839,40 @@ footer .menu_section {
     object-fit: cover;
     object-position: center;
     }
+    .awards .item .img_block {
+    height: 251px;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .awards .item h4 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .awards .owl-carousel {
+    padding: 0;
+  }
+  .awards .owl-carousel{
+    width: 100%;
+  }
+  .awards .title {
+    margin-bottom: 33px;
+  }
+  .news_container .item .content.shortText {
+    margin-bottom: 22px;
+  }
+  .awards {
+    margin-bottom: 25px;
+  }
+  .awards_info_section .item1 .left {
+    height: 285px;
+  }
+  .awards_info_section .item2 .right .img_block {
+    height: 230px;
+ }
+ .awards_info_section .item1 .text_block p:last-child {
+    margin-bottom: 20px;
+  }
+
 /*   .second_header_biography .right {
     height: 448px;
    }*/

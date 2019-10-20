@@ -195,17 +195,22 @@ $(document).ready(function() {
         navText: false,
         dots: true,
         items: 1,
-        margin: 60,
+        // margin: 60,
         autoWidth: true,
+        // stageClass: 'owl-stage owl-stage-imbblock',
         responsive : {
         576 : {
             items: 1,
             mouseDrag: true,
         },
-            768 : {
+        768 : {
             items: 2,
             dots: false,
             margin: 50,
+            // stageCla ss: 'owl-stage owl-stage-mobile',,
+        },
+        1004: {
+            margin: 60,
         },
             1200: {
             items: 2,
@@ -217,6 +222,51 @@ $(document).ready(function() {
         }
         }
     });
+
+
+
+
+    $(".rewievs .slider.owl-carousel").owlCarousel({
+        items: 1,
+        loop: false,
+        autoplay: false,
+        mouseDrag: false,
+        nav: false,
+        navText: false,
+        dots: true,
+        autoWidth: true,
+        // stageClass: 'owl-stage owl-stage-imbblock',
+        responsive : {
+        768 : {
+            items: 1,
+            dots: false,
+            stageClass: 'owl-stage owl-stage-mobile',
+            margin: 60,
+
+        },
+            1200: {
+            items: 3,
+            dots: false,
+            stageClass: 'owl-stage owl-stage-mobile',
+            margin: 60,
+        },
+            1500: {
+            items: 1,
+            dots: false,
+            stageClass: 'owl-stage owl-stage-mobile',
+            margin: 68,
+        }
+        }
+    });
+
+
+
+
+
+
+
+
+
 
 
     $(".awards_container .left").click(function() {
@@ -308,38 +358,7 @@ $(document).ready(function() {
     //     }
     // });
 
-    $(".rewievs .slider.owl-carousel").owlCarousel({
-        items: 1,
-        loop: false,
-        autoplay: false,
-        mouseDrag: false,
-        nav: false,
-        navText: false,
-        dots: true,
-        autoWidth: true,
-        stageClass: 'owl-stage owl-stage-imbblock',
-        responsive : {
-        768 : {
-            items: 1,
-            dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
-            margin: 60,
 
-        },
-            1200: {
-            items: 3,
-            dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
-            margin: 60,
-        },
-            1500: {
-            items: 1,
-            dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
-            margin: 68,
-        }
-        }
-    });
 
     // $(".news_container .img_block .owl-carousel").owlCarousel({
     //     items: 1,
