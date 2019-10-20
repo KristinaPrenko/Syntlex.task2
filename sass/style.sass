@@ -1,0 +1,344 @@
+$screen414: 414px
+$screen576: 576px
+
+$screen768: 768px
+
+$screen992: 992px
+$screen1024: 1024px
+$screen1260: 1260px
+$screen1900: 1900px
+
+
+
+=phone
+  @media screen and (min-width: $screen414)
+    @content
+=m
+  @media only screen and (min-width: $screen576)
+    @content
+=pad
+  @media only screen and (min-width: $screen768)
+    @content
+=tab
+  @media only screen and (min-width: $screen992)
+    @content
+=desctop
+  @media only screen and (min-width: $screen1024)
+    @content
+=xl
+  @media only screen and (min-width: $screen1260)
+    @content
+=xxl
+  @media only screen and (min-width: $screen1900)
+    @content
+
+* 
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+.btn_menu_mobile
+  top: 40px
+  right: 40px
+  +pad 
+    top: 30px
+    right: 30px
+  +tab 
+    top: 51px
+    right: 50px
+.logo
+  top: 40px
+  right: 40px
+  +pad 
+    top: 30px
+    right: 30px
+  +tab 
+    top: 51px
+    right: 50px
+
+.header
+  &_main
+    height: 895px
+    background: #121618 0% 0% no-repeat
+    font-family: RobotoRegular
+    margin-bottom: 0
+    +pad 
+      height: 1024px
+    +tab
+      height: 768px
+    +xl 
+      height: 800px
+    +xxl
+      height: 1080px
+
+
+.header-bg__img
+  height: 303px
+  object-fit: cover
+  object-position: -35px 0px
+  overflow: hidden
+  +pad
+    height: 562px
+    object-position: -70px 0px
+  +tab 
+    height: 100%
+    object-position: -150px 0px
+  +xl 
+    object-position: -90px 0px
+  +xxl 
+    object-position: 0px 0px
+ 
+.autor_title
+  display: none!important 
+  +xl 
+    display: flex!important 
+
+.main_header_info .first_content
+  display: none!important 
+  +xl 
+    display: block !important
+    font-size: 18px
+    padding-left: 16px !important
+    margin-bottom: 50px!important
+  +xxl 
+    margin-bottom: 100px!important
+
+
+.main_header
+  &_info
+    // border: red solid 1px
+    top: 360px
+    width: 453px
+    margin: 0 auto
+    +pad
+      width: 453px
+      padding: 0
+      margin-right: 30px
+      top: 404px
+      right: 0
+    +tab 
+      min-width: 752px
+      margin: 0
+      padding: 0
+      right: auto
+      top: auto
+      bottom: 50px
+      left: 50%
+      transform: translateX(-50%)
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+    +desctop
+      min-width: 776px
+    +xl 
+      min-width: 1092px
+    +xxl 
+      min-width: 1440px
+
+  &_desc
+    margin-top: 54px
+    +pad 
+        margin-top: 141px
+    +tab 
+        width: 250px  
+    +desctop
+      width: 256px
+    +xl 
+      width: 330px
+      margin-right: 69px
+    +xxl 
+      width: 491px
+      margin-right: 1px
+
+
+  &_name
+    width: 414px
+    +pad 
+      width: 453px
+    +tab 
+      width: 443px
+      object-fit: contain
+    +desctop
+      width: 460px
+    +xl 
+      width: 648px
+    +xxl 
+      width: 904px
+
+
+
+
+.second_content
+  font-family: RobotoRegular
+  +tab 
+    font-size: 17px
+  +desctop
+    font-size: 18px
+  +xl 
+    padding-left: 16px
+    font-size: 16px
+
+
+
+.main_header_info .second_content p 
+  margin-bottom: 10px
+
+.header_button_watch
+  font-size: 18px
+  border: #F26C4D solid 1px
+  height: 35px
+  width: 170px
+  background: none
+  color: #F26C4D
+  margin-top: 50px
+  +pad 
+    margin-top: 30px
+  +xl 
+    margin-left: 16px
+    margin-top: 40px
+  +xxl 
+    padding-left: 15px
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_portfolio
+  margin: 0
+  padding: 0
+  +tab 
+    padding: 50px
+  &_item
+    border: solid red 1px
+
+.img_block
+  border: solid red 1px
+  width: 100%!important
+  height: 512px
+  +tab 
+    width: 516px!important
+    height: 316px
+
+  &_item
+    +pad 
+      width: 100%
+      object-fit: cover
+      height: 512px
+      overflow: hidden
+    // +tab 
+    //   width: 100%
+    //   height: 100%
+
+
+.main_portfolio .info_block
+  padding: 0 40px
+  +pad
+    padding-left: 285px
+    width: 100%
+
+.tags
+  margin-top: 23px
+  +pad
+    padding-left: 0px
+    margin-left: 0
+.main_portfolio .tags
+  +pad 
+    padding-left: 0px
+    margin: 19px 0 14px 0
+    font-size: 15px
+    // margin-left: 0
+    // margin-bottom: 20px
+
+.main_portfolio .title
+  font-size: 28px
+  display: inline!important
+  line-height: 55px
+  border-bottom: 2px solid #F26C4D
+  font-weight: 500
+  padding-bottom: 0!important
+  +pad
+    padding-left: 0px
+    font-size: 42px
+.main_portfolio .item
+  margin-bottom: 98px
+  +pad 
+    display: block
+  +tab 
+    display: flex
+// .main_portfolio:nth-child(2)
+//   margin-bottom: 0
+.main_portfolio .item_last
+  margin-bottom: 0
+  +pad 
+    display: none
+.main_portfolio .item:nth-child(2n)
+  +pad 
+    margin-bottom: 0
+.main_portfolio .item:nth-child(2n) .info_block
+  display: inline!important
+  padding-bottom: 2px!important
+  +pad 
+    padding-left: 285px
+    display: block!important
+ 
+.item_bottom_block
+  flex-direction: column
+  margin-top: 10px
+  +pad
+    padding-left: 0px!important
+
+.main_portfolio .icon
+  +pad 
+    margin-left: 0
+    margin-bottom: 14px
+    margin-top: 25px
+
+.main_portfolio .item .item_bottom_block .data
+  margin-left: 0
+
+.main_portfolio .item .item_bottom_block .data .adress, 
+.main_portfolio .item .item_bottom_block .data .time,
+.main_portfolio .item .item_bottom_block .data .type
+  margin-top: 10px
+  +pad 
+    margin-top: 0
+    line-height: 28px
+.awards .title, .main_portfolio .item:nth-child(2n) .info_block .title
+
+
+.main_portfolio_button
+  font-size: 16px
+  line-height: 21px
+  height: 35px
+  width: 100px
+  background: #F26C4D
+  border: none
+  color: #FFFF
+  margin-left: 157px
+  margin-bottom: 67px
+  margin-top: 51px
+  +pad 
+    margin-left: 285px
+
