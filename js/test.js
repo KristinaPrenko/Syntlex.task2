@@ -195,7 +195,8 @@ $(document).ready(function() {
         navText: false,
         dots: true,
         items: 1,
-        // margin: 60,
+        margin: 200,
+        center: true,
         autoWidth: true,
         // stageClass: 'owl-stage owl-stage-imbblock',
         responsive : {
@@ -206,24 +207,67 @@ $(document).ready(function() {
         768 : {
             items: 2,
             dots: false,
+            center: false,
             margin: 50,
-            // stageCla ss: 'owl-stage owl-stage-mobile',,
+            stageClass: 'owl-stage owl-stage-mobile',
         },
         1004: {
             margin: 60,
+            center: false,
+            items: 2,
+
         },
             1200: {
             items: 2,
+            center: false,
+
+            margin: 60,
         },
             1500: {
-            items: 1,
-            margin: 60,
+            items: 3,
+            margin: 40,
+            center: false,
 
         }
         }
     });
 
+    // $(".rewievs_container .slider.owl-carousel").owlCarousel({
+    //     loop: false,
+    //     autoplay: false,
+    //     mouseDrag: false,
+    //     nav: false,
+    //     navText: false,
+    //     dots: true,
+    //     items: 1,
+    //     // margin: 200,
 
+    //     autoWidth: true,
+    //     // stageClass: 'owl-stage owl-stage-imbblock',
+    //     responsive : {
+    //     576 : {
+    //         items: 1,
+    //         mouseDrag: true,
+    //     },
+    //     768 : {
+    //         items: 2,
+    //         dots: false,
+    //         margin: 50,
+    //         stageClass: 'owl-stage owl-stage-mobile',
+    //     },
+    //     1004: {
+    //         margin: 60,
+    //     },
+    //         1200: {
+    //         items: 2,
+    //     },
+    //         1500: {
+    //         items: 1,
+    //         margin: 60,
+
+    //     }
+    //     }
+    // });
 
 
     $(".rewievs .slider.owl-carousel").owlCarousel({
@@ -240,20 +284,20 @@ $(document).ready(function() {
         768 : {
             items: 1,
             dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
+            // stageClass: 'owl-stage owl-stage-mobile',
             margin: 60,
 
         },
             1200: {
             items: 3,
             dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
-            margin: 60,
+            // stageClass: 'owl-stage owl-stage-mobile',
+            margin: 65,
         },
             1500: {
             items: 1,
             dots: false,
-            stageClass: 'owl-stage owl-stage-mobile',
+            // stageClass: 'owl-stage owl-stage-mobile',
             margin: 68,
         }
         }

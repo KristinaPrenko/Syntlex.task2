@@ -87,7 +87,8 @@ $(document).ready(function() {
 	        items: 3
 	    },
 	        1500: {
-	        items: 4
+	        items: 4,
+	        margin: 60,
 	    }
 	    }
 	});
@@ -136,31 +137,81 @@ $(document).ready(function() {
 
 
 	$(".awards_container .slider.owl-carousel").owlCarousel({
-		loop: false,
-		autoplay: false,
-		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
-		items: 1,
-		margin: 60,
-		autoWidth: true,
-		responsive : {
+	    loop: false,
+	    autoplay: false,
+	    mouseDrag: false,
+	    nav: false,
+	    navText: false,
+	    dots: true,
+	    items: 1,
+	    margin: 200,
+	    center: true,
+	    autoWidth: true,
+	    // stageClass: 'owl-stage owl-stage-imbblock',
+	    responsive : {
 	    576 : {
 	        items: 1,
-			mouseDrag: true,
+	        mouseDrag: true,
 	    },
-			768 : {
-	        items: 1,
-			dots: false,
-	    },
-			1200: {
+	    768 : {
 	        items: 2,
+	        dots: false,
+	        center: false,
+	        margin: 50,
+	        stageClass: 'owl-stage owl-stage-mobile',
 	    },
-			1500: {
+	    1004: {
+	        margin: 60,
+	        center: false,
+	        items: 2,
+
+	    },
+	        1200: {
+	        items: 2,
+	        center: false,
+
+	        margin: 60,
+	    },
+	        1500: {
 	        items: 3,
+	        margin: 40,
+	        center: false,
+
 	    }
-		}
+	    }
+	});
+	
+	$(".rewievs .slider.owl-carousel").owlCarousel({
+	    items: 1,
+	    loop: false,
+	    autoplay: false,
+	    mouseDrag: false,
+	    nav: false,
+	    navText: false,
+	    dots: true,
+	    autoWidth: true,
+	    // stageClass: 'owl-stage owl-stage-imbblock',
+	    responsive : {
+	    768 : {
+	        items: 1,
+	        dots: false,
+	        // stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 60,
+
+	    },
+	        1200: {
+	        items: 3,
+	        dots: false,
+	        // stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 65,
+	    },
+	        1500: {
+	        items: 1,
+	        dots: false,
+	        // stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 68,
+	    }
+	    }
 	});
 
 	$(".awards_container .left").click(function() {
@@ -212,6 +263,7 @@ $(document).ready(function() {
 		newsShortText(this);
 	});
 
+
 	$(".news_container .item .more_btn").click(function(){
 		if( $(this).hasClass('close') ) {
 			$(this).parent().parent().find('.content').hide();
@@ -225,6 +277,13 @@ $(document).ready(function() {
 			console.log('false');
 		}
 	});
+
+
+
+
+
+
+
 
 	// $(".news_container .item .content").text(function(i, text) {
 	//
@@ -255,17 +314,10 @@ $(document).ready(function() {
 	    stageClass: 'owl-stage owl-stage-imbblock',
 	    responsive : {
 	    768 : {
-	        items: 2,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
-	        margin: 60,
-
-	    },
-	    768 : {
 	        items: 1,
 	        dots: false,
 	        stageClass: 'owl-stage owl-stage-mobile',
-	        margin: 60,
+	        margin: 50,
 
 	    },
 	        1200: {
