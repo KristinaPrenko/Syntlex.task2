@@ -81,14 +81,16 @@ $(document).ready(function() {
 	    stageClass: 'owl-stage owl-stage-mobile',
 	    responsive : {
 	    768 : {
-	        items: 2
+	        items: 2,
+	        margin: 30,
 	    },
 	        1200: {
-	        items: 3
+	        items: 3,
+	        margin: 30,
 	    },
 	        1500: {
 	        items: 4,
-	        margin: 60,
+	        margin: 30,
 	    }
 	    }
 	});
@@ -170,7 +172,7 @@ $(document).ready(function() {
 	        items: 2,
 	        center: false,
 
-	        margin: 60,
+	        margin: 40,
 	    },
 	        1500: {
 	        items: 3,
@@ -180,7 +182,7 @@ $(document).ready(function() {
 	    }
 	    }
 	});
-	
+
 	$(".rewievs .slider.owl-carousel").owlCarousel({
 	    items: 1,
 	    loop: false,
@@ -222,6 +224,13 @@ $(document).ready(function() {
 		$(".awards_container .slider.owl-carousel").trigger('next.owl.carousel');
 	});
 
+	$(".rewievs_container .left").click(function() {
+		$(".rewievs_container .slider.owl-carousel").trigger('prev.owl.carousel');
+	});
+
+	$(".rewievs_container .right").click(function() {
+		$(".rewievs_container .slider.owl-carousel").trigger('next.owl.carousel');
+	});
 	// $('select').styler();
 
 	$("[name='phone']").mask("+7 (999) 999-99-99");
@@ -277,6 +286,27 @@ $(document).ready(function() {
 			console.log('false');
 		}
 	});
+
+
+
+	// $(".main_news .news_container .item .content").each(function(i) {
+	// 	newsShortText(this);
+	// });
+
+
+	// $(".main_news .news_container .item .more_btn").click(function(){
+	// 	if( $(this).hasClass('close') ) {
+	// 		$(this).parent().parent().find('.content').hide();
+	// 		$(this).parent().parent().find('.shortText').show();
+	// 		$(this).parent().parent().removeClass('active');
+	// 		console.log('true');
+	// 	} else {
+	// 		$(this).parent().parent().find('.content').show();
+	// 		$(this).parent().parent().find('.shortText').hide();
+	// 		$(this).parent().parent().addClass('active');
+	// 		console.log('false');
+	// 	}
+	// });
 
 
 
