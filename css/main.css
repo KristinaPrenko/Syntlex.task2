@@ -5762,7 +5762,7 @@
  .portfolio_page h3 {
    font-size: 24px;
    line-height: 32px;
-   margin-bottom: 40px
+   margin-bottom: 0;
  }
  .portfolio_page ul {
    margin-bottom: 140px
@@ -6674,15 +6674,9 @@
    header:after {
      left: 0
    }
-   /*   footer {
-     padding: 170px 12% 50px;
-   }*/
-   /*   footer .menu_section {
-     width: 19.5%;
-   }*/
-   /*   footer .form_section {
-     max-width: 320px;
-   }*/
+   .portfolio_page .portfolio_page_section_one {
+     margin-bottom: 115px;
+   }
    .second_header_biography .left {
      width: 63.0%;
    }
@@ -6864,13 +6858,19 @@
      margin-right: 48px;
    }
    .portfolio_page .icon {
-     margin-bottom: 50px;
+     margin-bottom: 49px;
    }
-   .portfolio_page h3 {
-     margin-bottom: 29px;
+    .portfolio_page .second_header_title h3 {
+     margin-bottom: 0;
+   }
+   .portfolio_page .portfolio_page_section_one h3 {
+     margin-bottom: 27px;
    }
    .portfolio_page ul li {
      padding-top: 15px;
+   }
+   .portfolio_page .portfolio_page_section_one {
+     margin-bottom: 150px;
    }
    .portfolio_page ul {
      margin-bottom: 35px;
@@ -6880,7 +6880,7 @@
      height: 344px;
    }
    .portfolio_galery {
-     padding-bottom: 123px;
+     padding-bottom: 23px;
    }
    .rewievs .left, .rewievs .right {
      top: 60px;
@@ -6900,11 +6900,18 @@
    .second_header_biography .second_header_title {
      width: 100%;
    }
+   .portfolio_page {
+   	margin-bottom: 70px;
+   }
+   .portfolio_header .second_header_title {
+     width: 59%;
+
+   }
    .portfolio_page .info_block {
      padding-left: 0px;
    }
    .portfolio_page .portfolio_page_section_three {
-     margin-bottom: 95px;
+     margin-bottom: 75px;
    }
    .second_header_biography {
      height: 768px;
@@ -7271,7 +7278,7 @@
      margin-bottom: 50px;
    }
    .portfolio_galery .title {
-     line-height: 40px;
+     line-height: 33px;
      width: 65%;
    }
    .portfolio_galery .portfolio_item .porfolio_inner {
@@ -7580,6 +7587,9 @@
    }
    .portfolio_page .img_block {
      max-width: 100%
+   }
+   .portfolio_page {
+     margin-bottom: 0px;
    }
    .portfolio_page .portfolio_page_section_one {
      -ms-flex-direction: column;
@@ -7996,7 +8006,7 @@
      width: 100%;
    }
    .main_news {
-     margin-bottom: 25px;
+     margin-bottom: 0;
    }
    .main_news .title {
      font-size: 28px;
@@ -8266,7 +8276,7 @@
      margin-bottom: 50px;
    }
    .main_news .news_container {
-     margin-bottom: 27px;
+     margin-bottom: 0;
      margin-top: 20px;
    }
    .main_news .item {
